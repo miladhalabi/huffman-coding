@@ -1,0 +1,36 @@
+.coding-div {
+  -moz-appearance: textfield-multiline;
+  -webkit-appearance: textarea;
+  border: 1px solid gray;
+  overflow: auto;
+  text-align: left;
+  color: inherit;
+  height: 15vh;
+  width: 100%;
+  padding: 5px;
+  cursor: default;
+  /* pointer-events: none; */
+}
+
+[contentEditable="true"]:empty:not(:focus):before {
+  content: attr(data-text);
+}
+
+.coding-span {
+  margin: 5px;
+  /* padding: 5px; */
+}
+
+.coding-span-hover {
+  cursor: pointer;
+  text-decoration: rgba(132, 186, 230, 0.5) wavy underline;
+  /* background-color: rgba(0, 0, 255, 0.2);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 255, 0.2); */
+}
+
+.coding-span:hover {
+  cursor: pointer;
+  text-decoration: rgba(132, 186, 230, 0.5) wavy underline;
+  /* background-color: rgba(0, 0, 255, 0.2);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 255, 0.2); */
+}
