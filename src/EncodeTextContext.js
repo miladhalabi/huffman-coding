@@ -11,6 +11,7 @@ const EncodeTextProvider = ({ children }) => {
   const [huffmanTreeJSON, setHuffmanTreeJSON] = useState({});
   const [huffmanTreePaths, setHuffmanTreePaths] = useState({}); // This is to animate the paths
   const [huffmanCoding, setHuffmanCoding] = useState([]);
+  const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
     // Check if there is text in the textbox
@@ -19,13 +20,29 @@ const EncodeTextProvider = ({ children }) => {
       setBinaryCode(text.map((char) => char.charCodeAt(0).toString(2)));
 
       // Construct the huffman tree based on the variation
-      const huffmanTree = new HuffmanBinaryTree(text, "Huffman Coding");
+      const huffmanTree = new HuffmanBinaryTree(text);
       // huffmanTree.printTree();
 
       // Get the encoding
       const huffmanEncoding = huffmanTree.generateEncoding();
       setHuffmanCoding(text.map((char) => huffmanEncoding[char]["stringPath"]));
       setHuffmanTreePaths(huffmanEncoding);
+
+      // Create data for the table
+      const frequency = text.reduce((acc, char) => {
+        acc[char] = (acc[char] || 0) + 1;
+        return acc;
+      }, {});
+
+      const uniqueChars = [...new Set(text)];
+      const newTableData = uniqueChars.map(char => ({
+        char: char === " " ? "Space" : char,
+        frequency: frequency[char],
+        binary: char.charCodeAt(0).toString(2),
+        huffman: huffmanEncoding[char]["stringPath"],
+      }));
+      setTableData(newTableData);
+
 
       // Visualize it
       const huffmanJSON = huffmanTree.jsonify();
@@ -35,6 +52,7 @@ const EncodeTextProvider = ({ children }) => {
       // Then the text is empty so reset all the state and svg
       setHuffmanCoding([]);
       setBinaryCode([]);
+      setTableData([]);
       const svg = select('svg');
       svg.selectAll('*').remove();
     }
@@ -64,6 +82,7 @@ const EncodeTextProvider = ({ children }) => {
         binaryCode,
         huffmanCoding,
         huffmanTreePaths,
+        tableData,
       }}
     >
       {children}

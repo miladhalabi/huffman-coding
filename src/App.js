@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, ThemeProvider, createTheme, Paper, Box } from "@mui/material";
 
 import AppTitle from "./AppTitle";
-import TextBoxes from "./TextBoxes";
+import CodingDisplay from "./CodingDisplay";
 import HuffmanCodeTree from "./HuffmanCodeTree";
 import ContactInfo from "./ContactInfo";
 
@@ -31,7 +31,7 @@ function App() {
           {/* Middle: Textboxes (on the left) and HuffmanTree Visualizer (on the right) */}
           <Grid item xs={5}>
             <Paper elevation={3} sx={{ padding: '20px' }}>
-              <TextBoxes/>
+              <CodingDisplay/>
             </Paper>
           </Grid>
           <Grid item xs={7}>
