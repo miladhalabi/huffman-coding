@@ -84,7 +84,7 @@ function visualizeHuffman(data) {
         .attr('y1', (d) => d.source.y)
         .attr('x2', (d) => d.target.x)
         .attr('y2', (d) => d.target.y)
-        .attr('stroke', 'darkgray')
+        .attr('stroke', '#424242')
         .attr('stroke-width', 1e-6);
 
   // Computes the mid point for the x and y axis of the line text
@@ -106,7 +106,8 @@ function visualizeHuffman(data) {
         .attr('x', (d, i) =>  computeMidpoint(d, i))
         .attr('y', (d, i) => computeMidpoint(d, i, false))
         .text((d) => assignPathText(d))
-        .attr("fill-opacity", 1e-6);
+        .attr("fill-opacity", 1e-6)
+        .attr('fill', '#FFFFFF');
 
   // Add transition for branches
   const duration = 750;
@@ -132,8 +133,8 @@ function visualizeHuffman(data) {
     .attr('cx', (d) => d.x)
     .attr('cy', (d) => d.y)
     .attr('r', 1e-6)
-    .attr('fill', 'lightblue')
-    .attr('stroke', 'darkgray')
+    .attr('fill', '#0288D1')
+    .attr('stroke', '#01579B')
     .attr('stroke-width', 1e-6);
 
   // Draw a rectangle for leaf nodes
@@ -148,8 +149,8 @@ function visualizeHuffman(data) {
     .attr('rx', 4)
     .attr('width', 1e-6)
     .attr('height', 1e-6)
-    .attr('fill', '#edf4fb')
-    .attr('stroke', 'darkgray');
+    .attr('fill', '#263238')
+    .attr('stroke', '#455A64');
 
   
   // Add the text to the nodes of the tree
@@ -159,7 +160,7 @@ function visualizeHuffman(data) {
   var leafIdCounter = 0
   nodeText.append('text').classed('label', true)
     .attr('id', (d, i) => d.data.name !== null ? `leaf-node-${leafIdCounter++}` : '')
-    .style('fill', 'gray')
+    .style('fill', '#FFFFFF')
     .attr('x', (d) => d.x)
     .attr('y', (d) => d.y+5) // Change the position of the text in the nodes
     .attr('text-anchor', 'middle')
