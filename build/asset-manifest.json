@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/huffmanAM/static/css/main.2861a836.css",
+    "main.js": "/huffmanAM/static/js/main.7aba30ea.js",
+    "static/js/453.d70217e3.chunk.js": "/huffmanAM/static/js/453.d70217e3.chunk.js",
+    "index.html": "/huffmanAM/index.html",
+    "main.2861a836.css.map": "/huffmanAM/static/css/main.2861a836.css.map",
+    "main.7aba30ea.js.map": "/huffmanAM/static/js/main.7aba30ea.js.map",
+    "453.d70217e3.chunk.js.map": "/huffmanAM/static/js/453.d70217e3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2861a836.css",
+    "static/js/main.7aba30ea.js"
+  ]
+}
