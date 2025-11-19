@@ -1,15 +1,6 @@
-# cuffman coding
+# huffman coding
 
-Huffman Coding Visualizer is an interactive web application that uses the input from the user to build and visualize a Huffman tree. The Huffman tree can be built with the regular [Huffman Coding algorithm](https://en.wikipedia.org/wiki/Huffman_coding). Additionally, the application shows the binary and encoded binary of the input symbols, displays the amount of memory saved (in bits) with the coding, and visualizes paths from the root of the tree to the character leaves when hovering over characters, bits, or encoded symbols! Test it out: [Live Demo](https://miladhalabi.github.io/huffman-coding/).
-
-## Getting Started
-
-These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes.
-
-### Prerequisites
-
-To run this application locally on your computer, you'll need `Git` and `Node.js` (which comes with `npm`) installed on your computer.
+Test it out: [Live Demo](https://miladhalabi.github.io/huffman-coding/).
 
 ### Installing
 
