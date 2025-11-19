@@ -1,7 +1,7 @@
 {
   "name": "huffman-am",
   "version": "0.1.0",
-  "homepage": "https://miladhalabi.github.io/huffmanAM",
+  "homepage": "https://miladhalabi.github.io/huffman-coding/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
