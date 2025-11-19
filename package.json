@@ -1,7 +1,7 @@
 {
-  "name": "huffman-coding-visualizer",
+  "name": "huffman-am",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/Huffman-Coding-Visualizer",
+  "homepage": "https://gitname.github.io/huffmanAM",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
