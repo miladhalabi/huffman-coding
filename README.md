@@ -17,7 +17,7 @@ Then run the following command in the command line and go to the desired directo
 
 Clone this repository:
 
-    git clone https://github.com/JonathanCen/Huffman-Coding-Visualizer.git
+    git clone https://github.com/miladhalabi/huffman-coding.git
 
 Go into the repository:
 
