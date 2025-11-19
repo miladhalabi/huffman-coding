@@ -13,7 +13,7 @@ Clone this repository:
 
 Go into the repository:
 
-    cd Huffman-Coding-Visualizer
+    cd huffman-coding
 
 Install all dependencies:
 
