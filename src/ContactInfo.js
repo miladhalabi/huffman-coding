@@ -10,7 +10,7 @@ function ContactInfo() {
       <Typography variant="subtitle1">
         <a
           id="github-link"
-          href="https://github.com/JonathanCen/Huffman-Coding-Visualizer"
+          href="https://github.com/miladhalabi/huffman-coding"
         >
           Source Code <GitHubIcon fontSize="small" />
         </a>
